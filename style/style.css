@@ -1,0 +1,54 @@
+/* universal style start */
+* {
+    font-family: 'Work Sans', sans-serif;
+    box-sizing: border-box;    /*content stuck into the box*/
+}
+/* universal style end */
+
+
+/* nav-bar style start */
+nav{
+    background-color: #8062D6;
+}
+.nav-container{
+    min-height: 70px;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+.logo-container {
+    display: flex;
+    width: 50%;
+}
+
+.logo-container p {
+    font-size: 2rem;
+}
+.logo-container .hive-section{
+    color:#e893cf;
+}
+.logo-container img {
+    width: 60px;
+    object-fit: cover;    /*if img strage then it fixed its px*/
+    margin-right: 20px;
+}
+.nav-item-container{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-item-container a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+.nav-item-container .login-btn{
+    background-color: #e893cf;
+    padding: 10px 20px;
+    font-weight: 700;
+    border-radius: 5px;
+    color: black;
+}
+/* nav-bar style end */
