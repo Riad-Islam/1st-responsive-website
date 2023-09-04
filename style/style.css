@@ -1,22 +1,26 @@
 /* universal style start */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:wght@800&family=Work+Sans:wght@400;500;600;700;800&display=swap');
 * {
-    font-family: 'Work Sans', sans-serif;
-    box-sizing: border-box;    /*content stuck into the box*/
+    box-sizing: border-box;
+    /*content stuck into the box*/
 }
+
 /* universal style end */
 
 
 /* nav-bar style start */
-nav{
+nav {
     background-color: #8062D6;
 }
-.nav-container{
+
+.nav-container {
     min-height: 70px;
     max-width: 1400px;
     margin: 0 auto;
     display: flex;
     align-items: center;
 }
+
 .logo-container {
     display: flex;
     width: 50%;
@@ -25,30 +29,125 @@ nav{
 .logo-container p {
     font-size: 2rem;
 }
-.logo-container .hive-section{
-    color:#e893cf;
+
+.logo-container .hive-section {
+    color: #e893cf;
 }
+
 .logo-container img {
     width: 60px;
-    object-fit: cover;    /*if img strage then it fixed its px*/
+    object-fit: cover;
+    /*if img strage then it fixed its px*/
     margin-right: 20px;
 }
-.nav-item-container{
+
+.nav-item-container {
     width: 50%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.nav-item-container a{
+
+.nav-item-container a {
     text-decoration: none;
     color: white;
     font-size: 1.2rem;
 }
-.nav-item-container .login-btn{
+
+.nav-item-container .login-btn {
     background-color: #e893cf;
     padding: 10px 20px;
     font-weight: 700;
     border-radius: 5px;
     color: black;
 }
+
 /* nav-bar style end */
+
+/* banner container style start*/
+.banner-container {
+    background-color: #e6e9eb;
+    margin: 50px auto 0px;
+    max-width: 1400px;
+    min-height: 50px;
+    display: flex;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.banner-text {
+    width: 50%;
+    text-align: center;
+}
+
+.banner-img {
+    width: 50%;
+}
+
+.banner-img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.banner-text h1 {
+    color: transparent;
+    background-image: linear-gradient(to bottom, #8062D6, #e893cf);
+    -webkit-background-clip: text;
+    font-size: 3.4rem;
+}
+
+.banner-text p {
+    font-size: 2.8rem;
+    font-family: 'Dancing Script', cursive;
+}
+.fa-brands{
+    font-size: 50px;
+    margin-left: 10px;
+}
+.banner-button{
+    background-color: transparent;
+    padding: 10px 20px;
+    border: 2px solid #8062D6;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 15px;
+    font-weight: 400;
+}
+.icons-container{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+/* banner container style end */
+
+/* Responsive Style */
+
+/* Responsive for mobile devices */
+@media screen and (max-width: 576px) {
+
+    .nav-container,
+    .nav-item-container {
+        flex-direction: column;
+    }
+
+    .nav-item-container {
+        width: 100%;
+    }
+
+    .nav-item-container a {
+        margin-bottom: 20px;
+        font-size: 1.4rem;
+    }
+
+    .nav-item-container .login-btn {
+        font-size: 1.6rem;
+        width: 100%;
+        text-align: center;
+        border-left: 10px solid rgb(121, 21, 91);
+        border-bottom: 10px solid rgb(121, 21, 91);
+        margin-bottom: 0;
+    }
+}
